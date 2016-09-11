@@ -1,0 +1,17 @@
+function addgroup {
+    param(
+            [string]$groupname,
+            [string]$username
+            )
+
+            #Get-ADGroupMember -Identity $group -Recursive | Select -ExpandProperty SAMAccountName
+
+            if (&(get-adgroupmember -filter {name -eq "$username"}) -eq $true){
+            
+            }
+
+
+
+
+
+}
